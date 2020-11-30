@@ -1,0 +1,76 @@
+// to find the average,max,min,standard deviation
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d,e,a1,b1,c1,d1,e1;
+	float A,SD,variance,VV;
+	printf("enter tha value of first integer-");
+	scanf("%d",&a);
+	printf("enter the value of second integer-");
+	scanf("%d",&b);
+	printf("enter the value of third integer-");
+	scanf("%d",&c);
+	printf("enter the value of forth integer-");
+	scanf("%d",&d);
+	printf("enter the value of fifth integer-");
+	scanf("%d",&e);
+     
+  if (a>b&&a>c&&a>d&&a>e)
+  {
+  	printf("\nthe %d is the maximum\n",a);
+  }
+  if (b>a&&b>c&&b>d&&b>e)
+  {
+  	printf("\nthe %d is the maximum\n",b);
+  }
+  if (c>a&&c>b&&c>d&&c>e)
+  {
+  	printf("\nthe %d is the maximum\n",c);
+  }
+  if(d>a&&d>b&&d>c&&d>e)
+  {
+  	printf("\nthe %d is the maximum\n",d);
+  }
+  if(e>a&&e>b&&e>c&&e>d)
+  {
+  	printf("\nthe %d is the maximum\n",e);
+  }
+  if(a<b&&a<c&&a<d&&a<e)
+  {
+  	printf("\nthe %d is the minimum\n",a);
+  }
+  if(b<a&&b<c&&b<d&&b<e)
+  {
+  	printf("\nthe %d is the minimum\n",b);
+  }
+  if(c<a&&c<b&&c<d&&c<e)
+  {
+  	printf("\nthe %d is the minimum\n",c);
+  }
+  if(d<a&&d<b&&d<c&&d<e)
+  {
+  	printf("\nthe %d is the minimum\n",d);
+  }
+  if(e<a&&e<b&&e<c&&e<d)
+  {
+  	printf("\the %d is the minimum\n",e);
+  }
+
+  A=(float)(a+b+c+d+e)/5;
+  printf("\nthe average of the given numbers is =%.2f\n",A);
+  
+  a1=A-a;
+  b1=A-b;
+  c1=A-c;
+  d1=A-d;
+  e1=A-e;
+  
+  VV=(float)(pow(a1,2)+pow(b1,2)+pow(c1,2)+pow(d1,2)+pow(e1,2));
+  
+  variance=(float)VV/4;
+  SD=sqrt(variance);
+  printf("\nthe variance is =%.2f\n",variance);
+  printf("\nthe standard mean deviation of the given numbers is=%f",SD);
+  return 0;
+}
